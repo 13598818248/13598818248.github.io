@@ -172,7 +172,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="第一章-js面向对象"><a href="#第一章-js面向对象" class="headerlink" title="第一章 js面向对象"></a>第一章 js面向对象</h3>
+        <hr>
+<h2 id="GitHub的使用方法"><a href="#GitHub的使用方法" class="headerlink" title="GitHub的使用方法"></a>GitHub的使用方法</h2><blockquote>
+<p>第一章(如何安装Github)<br>1.安装GitHub。网站<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a><br>2.shift+右键 -&gt; cmd  git  init  –初始化本地仓库<br>3.git status –查看源代码状态<br>4.get add . –添加文件<br>5.git commit -m “注释” –注释的该代码版本提交你修改了哪些内容<br>6.git log –查看git提交的日志<br>7.如何上传到远程仓库？<br>1) 先增加远程仓库 git remote add origin <strong><em>  –</em></strong>意味GitHub网站仓库内容的地址<br>2) 把代码直接的提交到这个远程仓库 git push -u origin master<br>8.免密码提交？ssh-keygen -t rsa<br>公钥和私钥，将公钥上传到GitHub。<br>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>第二章(如何搭建自己的博客)<br>1.安装node.js 官网<a href="https://npm.taobao.org/mirrors/node/v8.9.3/node-v8.9.3-x64.msi" target="_blank" rel="noopener">https://npm.taobao.org/mirrors/node/v8.9.3/node-v8.9.3-x64.msi</a><br>2.node、npm管理工具<br>node -v、npm -v –验证版本号(有版本号即为成功)<br>3.安装hexo工具<br>1) npm install -g hexo-cli –安装hexo工具(切换以下npm下载源:npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a>  // 为了下载快一点，切换成淘宝镜像源。)<br>2) 使用如下命令安装下载博客源代码<br>hexo init blog //找到合适文件(路径不能有中文)<br>3) cd blog //切换blog文件夹<br>4) npm install //安装依赖文件<br>5) hexo server //本地开启服务器<br>4.给hexo安装git工具插件<br>npm install hexo -deployer-git –save<br>5.配置远程仓库<br>在hexo工程中有一个根目录_config.yml的文件中配置如下：<br>deploy:<br>    type: git//注意一定不能忘记空格<br>    repository: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:hjyl-cheng/hjyl-cheng.github.io.git<br>    branch:master<br>6.使用hexo将代码提交到远程仓库<br>hexo clean //先将之前生成的public文件夹删除掉<br>hexo d g //生成html代码并且提交到GitHub上，g生成 d提交</p>
+</blockquote>
+
       
 
       
